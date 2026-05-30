@@ -7,6 +7,8 @@ authors:
   - family-names: "Temiz"
     given-names: "Batuhan"
 year: 2026
+version: "0.0.1"
+date-released: "2026-05-31"
 license: "Apache-2.0"
 repository-code: "https://github.com/PhiniteLab/pythalab-sharq-hjb-uav-command-supervision"
 abstract: "Simulation-only fixed-wing UAV command-supervision repository for bounded residual Q-learning and HJB residual benchmark outputs."
