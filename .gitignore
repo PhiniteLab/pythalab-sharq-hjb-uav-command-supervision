@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+.env
+.envrc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage*
+htmlcov/
+
+# Node / frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vite/
+playwright-report/
+test-results/
+
+# Local IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime experiment outputs and local checkpoints
+artifacts/
+backend/artifacts/
+tmp-repro-smoke/
+tmp-*/
+*.npz
+*.npy
+
+# Experiment local intermediates
+experiments/tmp/
+experiments/*.log
+
+# Do not publish third-party/local literature collections or upload bundles
+private-literature/
+review-upload-bundles/
+*.docx
+*.xlsx
+
+# Public experiments result package intentionally kept. Canonical paths are:
+# - experiments/claims/**
+# - experiments/results/raw/**
+# - experiments/results/data/**
+# - experiments/results/tables/*.csv
+# - experiments/results/figures/*.png

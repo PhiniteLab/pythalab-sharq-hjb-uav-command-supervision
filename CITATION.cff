@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or its result files, please cite this repository release."
+title: "Autopilot-Preserving Residual Q-Learning with HJB-Inspired Finite-Action Risk Filtering for Fixed-Wing UAV Command Supervision"
+authors:
+  - family-names: "Iscan"
+    given-names: "Mehmet"
+  - family-names: "Temiz"
+    given-names: "Batuhan"
+year: 2026
+license: "Apache-2.0"
+repository-code: "https://github.com/PhiniteLab/pythalab-sharq-hjb-uav-command-supervision"
+abstract: "Simulation-only fixed-wing UAV command-supervision repository for bounded residual Q-learning and HJB residual benchmark outputs."
+keywords:
+  - fixed-wing UAV
+  - residual reinforcement learning
+  - Hamilton-Jacobi-Bellman
+  - command supervision
+  - simulation benchmark

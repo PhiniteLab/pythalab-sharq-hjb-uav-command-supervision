@@ -1,0 +1,25 @@
+profile,controller_mode,mean_rms_reference_error_m,method_label
+fight_mode,fixed_matlab_autopilot,682.4156377194206,Baseline
+figure_eight,fixed_matlab_autopilot,133.7413623008379,Baseline
+high_speed_climb_s_turn_200,fixed_matlab_autopilot,334.68023304061194,Baseline
+loiter_orbit,fixed_matlab_autopilot,120.07070651460471,Baseline
+racetrack,fixed_matlab_autopilot,294.70183221593334,Baseline
+runway_takeoff_accel_200,fixed_matlab_autopilot,355.52450335210915,Baseline
+takeoff_climbout_200,fixed_matlab_autopilot,211.17637693230694,Baseline
+straight_climb_altitude_hold,fixed_matlab_autopilot,364.05998826152575,Baseline
+racetrack,online_q_learning,70.87022832370505,Q residual
+loiter_orbit,online_q_learning,44.59819609897864,Q residual
+figure_eight,online_q_learning,0.7811199942483701,Q residual
+takeoff_climbout_200,online_q_learning,0.6844322991838769,Q residual
+runway_takeoff_accel_200,online_q_learning,0.8307078141733021,Q residual
+straight_climb_altitude_hold,online_q_learning,79.05873882182068,Q residual
+high_speed_climb_s_turn_200,online_q_learning,76.245248564181,Q residual
+fight_mode,online_q_learning,278.64386785317635,Q residual
+racetrack,sharq_hjb,64.40537619812018,SHARQ-HJB
+loiter_orbit,sharq_hjb,38.941441297790725,SHARQ-HJB
+high_speed_climb_s_turn_200,sharq_hjb,75.38245041295018,SHARQ-HJB
+figure_eight,sharq_hjb,0.7728613765935162,SHARQ-HJB
+fight_mode,sharq_hjb,68.46260154053755,SHARQ-HJB
+runway_takeoff_accel_200,sharq_hjb,0.8298290273366883,SHARQ-HJB
+straight_climb_altitude_hold,sharq_hjb,78.4221356178578,SHARQ-HJB
+takeoff_climbout_200,sharq_hjb,0.7364428932053473,SHARQ-HJB

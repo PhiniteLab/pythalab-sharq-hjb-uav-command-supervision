@@ -1,0 +1,4 @@
+# Dependencies needed only for scripts/write_figures.py
+matplotlib>=3.8
+pandas>=2.0
+numpy>=1.24

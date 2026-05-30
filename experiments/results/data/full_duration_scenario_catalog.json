@@ -1,0 +1,379 @@
+[
+  {
+    "circle_airspeed_mps": 30.0,
+    "circle_diameter_m": 200.0,
+    "circle_direction": 1,
+    "description": "Low-altitude 200 m orbit with maximum crosswind and turbulence.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_v": 3.0,
+      "steady_wind_e": 10.0,
+      "turbulence_std": 2.0
+    },
+    "lookahead_m": 80.0,
+    "name": "orbit_crosswind_turbulence_low_alt",
+    "profile": "loiter_orbit",
+    "seed": 4101,
+    "straight_length_m": 160.0,
+    "target_altitude_m": 180.0
+  },
+  {
+    "circle_airspeed_mps": 34.0,
+    "circle_diameter_m": 160.0,
+    "circle_direction": 1,
+    "description": "Tighter orbit and tailwind/gust stress after climb-out.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_v": 4.0,
+      "steady_wind_n": 10.0,
+      "turbulence_std": 1.4
+    },
+    "lookahead_m": 80.0,
+    "name": "tight_orbit_tailwind_gust",
+    "profile": "high_speed_climb_s_turn_200",
+    "seed": 4102,
+    "straight_length_m": 150.0,
+    "target_altitude_m": 210.0
+  },
+  {
+    "circle_airspeed_mps": 45.0,
+    "circle_diameter_m": 320.0,
+    "circle_direction": 1,
+    "description": "Wide faster orbit under strong headwind to stress total-energy recovery.",
+    "duration_s": 50.0,
+    "effects": {
+      "gust_body_u": -3.5,
+      "steady_wind_n": -10.0,
+      "turbulence_std": 1.5
+    },
+    "lookahead_m": 80.0,
+    "name": "wide_orbit_headwind_energy",
+    "profile": "racetrack",
+    "seed": 4103,
+    "straight_length_m": 240.0,
+    "target_altitude_m": 240.0
+  },
+  {
+    "circle_airspeed_mps": 32.0,
+    "circle_diameter_m": 220.0,
+    "circle_direction": -1,
+    "description": "Reverse-turn orbit with vertical wind component and lateral shear proxy.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_v": -4.0,
+      "steady_wind_d": 3.0,
+      "steady_wind_e": -10.0,
+      "turbulence_std": 1.2
+    },
+    "lookahead_m": 80.0,
+    "name": "reverse_orbit_shear",
+    "profile": "figure_eight",
+    "seed": 4104,
+    "straight_length_m": 180.0,
+    "target_altitude_m": 200.0
+  },
+  {
+    "circle_airspeed_mps": 40.0,
+    "circle_diameter_m": 260.0,
+    "circle_direction": 1,
+    "description": "Higher target altitude and headwind during climb/straight/orbit transition.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_u": -4.0,
+      "gust_body_w": 2.5,
+      "steady_wind_n": -8.0,
+      "turbulence_std": 1.8
+    },
+    "lookahead_m": 80.0,
+    "name": "high_altitude_headwind_climb",
+    "profile": "straight_climb_altitude_hold",
+    "seed": 4105,
+    "straight_length_m": 220.0,
+    "target_altitude_m": 300.0
+  },
+  {
+    "circle_airspeed_mps": 28.0,
+    "circle_diameter_m": 180.0,
+    "circle_direction": 1,
+    "description": "Lower-altitude reference with maximum vertical gust and turbulence.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_u": -2.0,
+      "gust_body_w": 4.0,
+      "turbulence_std": 2.0
+    },
+    "lookahead_m": 80.0,
+    "name": "low_alt_vertical_gust_recovery",
+    "profile": "takeoff_climbout_200",
+    "seed": 4106,
+    "straight_length_m": 130.0,
+    "target_altitude_m": 140.0
+  },
+  {
+    "circle_airspeed_mps": 55.0,
+    "circle_diameter_m": 300.0,
+    "circle_direction": 1,
+    "description": "Fast 300 m circle with diagonal wind and gust coupling.",
+    "duration_s": 50.0,
+    "effects": {
+      "gust_body_u": 3.0,
+      "gust_body_v": -3.0,
+      "steady_wind_e": -8.0,
+      "steady_wind_n": 8.0,
+      "turbulence_std": 1.6
+    },
+    "lookahead_m": 80.0,
+    "name": "fast_circle_mixed_crosswind",
+    "profile": "runway_takeoff_accel_200",
+    "seed": 4107,
+    "straight_length_m": 230.0,
+    "target_altitude_m": 250.0
+  },
+  {
+    "circle_airspeed_mps": 32.0,
+    "circle_diameter_m": 140.0,
+    "circle_direction": -1,
+    "description": "Small-radius orbit under lateral gusts; intentionally lateral-error dominated.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_v": -4.0,
+      "steady_wind_e": 10.0,
+      "turbulence_std": 1.9
+    },
+    "lookahead_m": 80.0,
+    "name": "small_radius_crosswind_orbit",
+    "profile": "loiter_orbit",
+    "seed": 4108,
+    "straight_length_m": 140.0,
+    "target_altitude_m": 200.0
+  },
+  {
+    "circle_airspeed_mps": 112.0,
+    "circle_diameter_m": 480.0,
+    "circle_direction": 1,
+    "description": "Cinematic fight-mode S-turn with vertical gusts and headwind.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_w": 4.0,
+      "steady_wind_n": -9.0,
+      "turbulence_std": 1.6
+    },
+    "lookahead_m": 80.0,
+    "name": "fight_vertical_gust",
+    "profile": "fight_mode",
+    "seed": 4109,
+    "straight_length_m": 200.0,
+    "target_altitude_m": 240.0
+  },
+  {
+    "circle_airspeed_mps": 112.0,
+    "circle_diameter_m": 480.0,
+    "circle_direction": 1,
+    "description": "Fight-mode S-turn with maximum crosswind/turbulence and mixed gusts.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_u": -3.0,
+      "gust_body_v": 4.0,
+      "steady_wind_e": -10.0,
+      "turbulence_std": 2.0
+    },
+    "lookahead_m": 80.0,
+    "name": "fight_crosswind_turbulence",
+    "profile": "fight_mode",
+    "seed": 4110,
+    "straight_length_m": 200.0,
+    "target_altitude_m": 240.0
+  },
+  {
+    "circle_airspeed_mps": 34.0,
+    "circle_diameter_m": 240.0,
+    "circle_direction": 1,
+    "description": "Runway takeoff with diagonal crosswind and mild vertical gust before orbit capture.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_w": 2.5,
+      "steady_wind_e": 9.0,
+      "steady_wind_n": 6.0,
+      "turbulence_std": 1.4
+    },
+    "lookahead_m": 80.0,
+    "name": "oblique_takeoff_crosswind",
+    "profile": "runway_takeoff_accel_200",
+    "seed": 4111,
+    "straight_length_m": 170.0,
+    "target_altitude_m": 170.0
+  },
+  {
+    "circle_airspeed_mps": 42.0,
+    "circle_diameter_m": 280.0,
+    "circle_direction": 1,
+    "description": "Higher climb target under headwind/turbulence to stress energy allocation.",
+    "duration_s": 60.0,
+    "effects": {
+      "gust_body_u": -4.0,
+      "gust_body_w": 3.0,
+      "steady_wind_n": -10.0,
+      "turbulence_std": 2.0
+    },
+    "lookahead_m": 80.0,
+    "name": "steep_climb_headwind_turbulence",
+    "profile": "takeoff_climbout_200",
+    "seed": 4112,
+    "straight_length_m": 260.0,
+    "target_altitude_m": 340.0
+  },
+  {
+    "circle_airspeed_mps": 38.0,
+    "circle_diameter_m": 260.0,
+    "circle_direction": 1,
+    "description": "Long straight leg before orbit entry with sustained crosswind rejoin demand.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_v": 3.5,
+      "steady_wind_e": 10.0,
+      "turbulence_std": 1.3
+    },
+    "lookahead_m": 120.0,
+    "name": "long_straight_crosswind_rejoin",
+    "profile": "straight_climb_altitude_hold",
+    "seed": 4113,
+    "straight_length_m": 360.0,
+    "target_altitude_m": 220.0
+  },
+  {
+    "circle_airspeed_mps": 52.0,
+    "circle_diameter_m": 260.0,
+    "circle_direction": -1,
+    "description": "Reverse fast orbit with tailwind and lateral gust forcing.",
+    "duration_s": 50.0,
+    "effects": {
+      "gust_body_v": -4.0,
+      "steady_wind_n": 9.0,
+      "turbulence_std": 1.5
+    },
+    "lookahead_m": 80.0,
+    "name": "reverse_fast_orbit_tailwind",
+    "profile": "racetrack",
+    "seed": 4114,
+    "straight_length_m": 220.0,
+    "target_altitude_m": 230.0
+  },
+  {
+    "circle_airspeed_mps": 24.0,
+    "circle_diameter_m": 220.0,
+    "circle_direction": 1,
+    "description": "Lower-speed orbit with vertical shear proxy and high turbulence.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_w": 4.0,
+      "steady_wind_d": -4.0,
+      "turbulence_std": 2.0
+    },
+    "lookahead_m": 80.0,
+    "name": "low_speed_vertical_shear_hold",
+    "profile": "loiter_orbit",
+    "seed": 4115,
+    "straight_length_m": 180.0,
+    "target_altitude_m": 190.0
+  },
+  {
+    "circle_airspeed_mps": 30.0,
+    "circle_diameter_m": 150.0,
+    "circle_direction": 1,
+    "description": "Compact circle under mixed north/east wind and opposing body gusts.",
+    "duration_s": 45.0,
+    "effects": {
+      "gust_body_u": 4.0,
+      "gust_body_v": -4.0,
+      "steady_wind_e": 7.0,
+      "steady_wind_n": -7.0,
+      "turbulence_std": 1.7
+    },
+    "lookahead_m": 80.0,
+    "name": "compact_circle_windshift",
+    "profile": "figure_eight",
+    "seed": 4116,
+    "straight_length_m": 150.0,
+    "target_altitude_m": 210.0
+  },
+  {
+    "circle_airspeed_mps": 58.0,
+    "circle_diameter_m": 300.0,
+    "circle_direction": 1,
+    "description": "Fast climb/orbit entry with strong crosswind and positive vertical gust.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_v": 3.0,
+      "gust_body_w": -3.5,
+      "steady_wind_e": -10.0,
+      "turbulence_std": 1.6
+    },
+    "lookahead_m": 80.0,
+    "name": "high_speed_climb_crosswind",
+    "profile": "high_speed_climb_s_turn_200",
+    "seed": 4117,
+    "straight_length_m": 250.0,
+    "target_altitude_m": 280.0
+  },
+  {
+    "circle_airspeed_mps": 112.0,
+    "circle_diameter_m": 480.0,
+    "circle_direction": 1,
+    "description": "Fight-mode S-turn with tailwind and alternating lateral gust stress.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_v": -4.0,
+      "gust_body_w": 2.5,
+      "steady_wind_n": 10.0,
+      "turbulence_std": 1.5
+    },
+    "lookahead_m": 80.0,
+    "name": "fight_tailwind_lateral_gust",
+    "profile": "fight_mode",
+    "seed": 4118,
+    "straight_length_m": 200.0,
+    "target_altitude_m": 240.0
+  },
+  {
+    "circle_airspeed_mps": 112.0,
+    "circle_diameter_m": 480.0,
+    "circle_direction": 1,
+    "description": "Fight-mode S-turn with diagonal wind, mixed gusts, and maximum turbulence.",
+    "duration_s": 55.0,
+    "effects": {
+      "gust_body_u": -4.0,
+      "gust_body_v": 4.0,
+      "gust_body_w": 4.0,
+      "steady_wind_e": 8.0,
+      "steady_wind_n": -8.0,
+      "turbulence_std": 2.0
+    },
+    "lookahead_m": 80.0,
+    "name": "fight_diagonal_max_turbulence",
+    "profile": "fight_mode",
+    "seed": 4119,
+    "straight_length_m": 200.0,
+    "target_altitude_m": 240.0
+  },
+  {
+    "circle_airspeed_mps": 44.0,
+    "circle_diameter_m": 240.0,
+    "circle_direction": -1,
+    "description": "Reverse-turn racetrack-like orbit with vertical wind and mixed gusts.",
+    "duration_s": 50.0,
+    "effects": {
+      "gust_body_u": 3.0,
+      "gust_body_w": -3.0,
+      "steady_wind_d": 4.0,
+      "steady_wind_e": -6.0,
+      "steady_wind_n": -6.0,
+      "turbulence_std": 1.8
+    },
+    "lookahead_m": 80.0,
+    "name": "racetrack_reverse_vertical_mixed",
+    "profile": "racetrack",
+    "seed": 4120,
+    "straight_length_m": 240.0,
+    "target_altitude_m": 260.0
+  }
+]
