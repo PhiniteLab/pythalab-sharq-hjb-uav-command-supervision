@@ -1,0 +1,12 @@
+HJB-Inspired Residual UAV Command Supervision Repository
+
+Code license: Apache-2.0, unless a file states otherwise.
+
+Data/result-file intent: CSV, JSON, JSONL benchmark outputs, derived value tables, and PNG figures are intended to be redistributed with the repository for result reproducibility. If an archive requires a separate data license, publish those result files under an explicit data license such as CC-BY-4.0 and update this NOTICE.
+
+Third-party / provenance notes:
+
+- The fixed-wing UAV modeling basis follows small-UAV modeling/autopilot literature; this repository contains a project-specific Python implementation and coefficients/configurations.
+- `public/models/ro3code/saab-gripen/*.stl` meshes are included as visual-only demo assets. They are not aerodynamic evidence and do not affect backend physics or benchmark results. Their provenance is Ro3code's `aircraft_3d_animation` project (`import_stl_model/SAAB-Gripen/`; GitHub: https://github.com/Ro3code/aircraft_3d_animation, MathWorks File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/86453-aircraft-3d-animation). The upstream repository advertises a GPL-3.0 license. For this repository snapshot, the included 13 STL files match the upstream STL files exactly at the SHA-256 level. Keep provenance/attribution and upstream license review separate from the simulation claims.
+- Third-party Python and JavaScript dependencies are declared in `backend/pyproject.toml` and `package.json`/`package-lock.json`.
+- Literature PDFs and private upload bundles are intentionally excluded from this repository.

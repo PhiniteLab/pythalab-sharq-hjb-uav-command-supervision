@@ -1,0 +1,16 @@
+metric,controller_mode,wins,method_label
+control_energy_integral,fixed_matlab_autopilot,16,Baseline
+control_energy_integral,online_q_learning,1,Q residual
+control_energy_integral,sharq_hjb,3,SHARQ-HJB
+max_abs_load_factor_nz,fixed_matlab_autopilot,8,Baseline
+max_abs_load_factor_nz,online_q_learning,4,Q residual
+max_abs_load_factor_nz,sharq_hjb,8,SHARQ-HJB
+rms_airspeed_error_mps,fixed_matlab_autopilot,20,Baseline
+rms_altitude_error_m,online_q_learning,2,Q residual
+rms_altitude_error_m,sharq_hjb,18,SHARQ-HJB
+rms_reference_error_m,fixed_matlab_autopilot,4,Baseline
+rms_reference_error_m,online_q_learning,1,Q residual
+rms_reference_error_m,sharq_hjb,15,SHARQ-HJB
+safety_time_fraction,fixed_matlab_autopilot,5,Baseline
+safety_time_fraction,online_q_learning,14,Q residual
+safety_time_fraction,sharq_hjb,1,SHARQ-HJB

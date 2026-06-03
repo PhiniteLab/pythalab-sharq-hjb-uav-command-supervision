@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this code or its result files, please cite the arXiv paper below (preferred) and, where relevant, this repository release."
+title: "Autopilot-Preserving Residual Q-Learning with HJB-Inspired Finite-Action Risk Filtering for Fixed-Wing UAV Command Supervision"
+authors:
+  - family-names: "Iscan"
+    given-names: "Mehmet"
+  - family-names: "Temiz"
+    given-names: "Batuhan"
+year: 2026
+version: "0.0.1"
+date-released: "2026-05-31"
+license: "Apache-2.0"
+repository-code: "https://github.com/PhiniteLab/pythalab-sharq-hjb-uav-command-supervision"
+url: "https://arxiv.org/abs/2606.01397"
+abstract: "Simulation-only fixed-wing UAV command-supervision repository for bounded residual Q-learning and HJB residual benchmark outputs."
+keywords:
+  - fixed-wing UAV
+  - residual reinforcement learning
+  - Hamilton-Jacobi-Bellman
+  - command supervision
+  - simulation benchmark
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.2606.01397"
+    description: "arXiv DOI for the accompanying paper"
+  - type: other
+    value: "arXiv:2606.01397"
+    description: "arXiv preprint identifier"
+preferred-citation:
+  type: article
+  title: "Autopilot-Preserving Residual Q-Learning with HJB-Inspired Finite-Action Risk Filtering for Fixed-Wing UAV Command Supervision"
+  authors:
+    - family-names: "Iscan"
+      given-names: "Mehmet"
+    - family-names: "Temiz"
+      given-names: "Batuhan"
+  year: 2026
+  month: 5
+  doi: "10.48550/arXiv.2606.01397"
+  url: "https://arxiv.org/abs/2606.01397"
+  collection-title: "arXiv"
+  notes: "arXiv:2606.01397 [cs.RO]"
+  identifiers:
+    - type: other
+      value: "arXiv:2606.01397"
+      description: "arXiv preprint identifier"

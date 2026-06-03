@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythalab-uavsim-backend"
+version = "0.1.0"
+description = "Python conversion of the UAV Simulink autopilot served over WebSocket."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "PythaLab"}]
+dependencies = [
+    "fastapi>=0.115",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "uvicorn[standard]>=0.30",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27",
+    "pyright>=1.1",
+    "pytest>=7.0",
+    "ruff>=0.8",
+]
+experiments = [
+    "matplotlib>=3.8",
+    "pandas>=2.0",
+]
+
+[project.scripts]
+uavsim-backend = "uavsim.server:main"
+uavsim-experiments = "uavsim.experiment_runner:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+# The ``uavsim`` package is a near-verbatim Python port of the upstream
+# MATLAB/Simulink reference model; preserve its style and silence the
+# style-only diagnostics that originate from it.
+[tool.ruff.lint.per-file-ignores]
+"src/uavsim/dynamics.py" = ["E741"]
+"src/uavsim/forces_moments.py" = ["F841"]
+"src/uavsim/simulation.py" = ["E731"]
