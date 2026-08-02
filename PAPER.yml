@@ -1,0 +1,69 @@
+# PAPER.yml — machine-readable identity card for this repository.
+#
+# This file is the keystone identity record for the collection. On any
+# disagreement with README.md or CITATION.cff, PAPER.yml is authoritative.
+#
+# DELICATE: this repository's FORMER GitHub slug
+# (PhiniteLab/pythalab-sharq-hjb-uav-command-supervision) is printed inside
+# the published PDF of arXiv:2606.01397. See notes[] below before touching
+# former_github_slugs[] or re-registering that slug anywhere.
+
+name: residual-shield
+bucket: published
+arxiv_id: "2606.01397"
+doi: "10.48550/arXiv.2606.01397"
+title: "Autopilot-Preserving Residual Q-Learning with HJB-Inspired Finite-Action Risk Filtering for Fixed-Wing UAV Command Supervision"
+authors:
+  - "Mehmet Iscan"
+  - "Batuhan Temiz"
+venue: "arXiv:2606.01397 [cs.RO]"
+status: published
+role: companion-code
+paper_of_record: false
+latex_home: "https://github.com/PhiniteLab/sharq-twin"
+code_home: "https://github.com/PhiniteLab/residual-shield"
+install_home: "https://github.com/PhiniteLab/residual-shield"
+former_names:
+  - pythalab-sharq-hjb-uav-command-supervision
+former_github_slugs:
+  - PhiniteLab/pythalab-sharq-hjb-uav-command-supervision
+companions:
+  - PhiniteLab/sharq-twin
+supersedes: []
+superseded_by: []
+frozen_strings:
+  # Python distribution / import identity (backend/pyproject.toml, backend/src/uavsim/)
+  - pythalab-uavsim-backend
+  - uavsim
+  - uavsim-backend
+  - uavsim-experiments
+  - sharq_hjb
+  - q_learning
+  # npm package identity (package.json)
+  - uav-aeroelastic-digital-twin
+notes:
+  - >-
+    This repository's FORMER GitHub slug, PhiniteLab/pythalab-sharq-hjb-uav-command-supervision,
+    is cited verbatim inside the published PDF of arXiv:2606.01397. The rename to
+    PhiniteLab/residual-shield is complete and GitHub's slug redirect has been verified
+    working, but that redirect survives ONLY while the old slug stays unregistered.
+    Nobody may ever create a new GitHub repository at the
+    PhiniteLab/pythalab-sharq-hjb-uav-command-supervision slug — doing so would permanently
+    break the redirect that keeps the citation inside the published paper resolvable.
+  - >-
+    paper_of_record is deliberately false: the manuscript (arxiv-latex/, arXiv source) lives
+    in the companion repository published/sharq-twin (PhiniteLab/sharq-twin). This repository
+    is the code/artifact a reader of the paper fetches — it is the companion-code release, not
+    the manuscript home.
+  - >-
+    This repository's README.md BibTeX block (README.md around the "How to cite" section) and
+    CITATION.cff already carry the correct arXiv id (2606.01397) and DOI
+    (10.48550/arXiv.2606.01397); only the repository-code / clone URLs were stale and have been
+    updated to the new slug. Citation metadata content itself was left untouched.
+  - >-
+    License is Apache-2.0 for this repository (see LICENSE, NOTICE) — this is intentionally
+    different from repositories in the collection that use MIT, and must not be replaced.
+  - >-
+    This repository is declared the AUTHORITATIVE simulator for the backend/src/uavsim/
+    package. Where another repository in the collection carries a drifted copy of
+    backend/src/uavsim/, this copy is the one to trust and to sync from.

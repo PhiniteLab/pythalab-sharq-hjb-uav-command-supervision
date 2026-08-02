@@ -1,5 +1,17 @@
 # HJB-Inspired Residual UAV Command Supervision
 
+| bucket | arXiv | role | former name(s) | former GitHub slug |
+| --- | --- | --- | --- | --- |
+| published | [2606.01397](https://arxiv.org/abs/2606.01397) | companion-code | pythalab-sharq-hjb-uav-command-supervision | `PhiniteLab/pythalab-sharq-hjb-uav-command-supervision` |
+
+This repository is the companion-code artifact for arXiv:2606.01397; the manuscript
+(LaTeX source) lives in the companion repository
+[`PhiniteLab/sharq-twin`](https://github.com/PhiniteLab/sharq-twin). See
+[`PAPER.yml`](PAPER.yml) for the full machine-readable identity record. The former
+GitHub slug above is cited verbatim inside the published PDF of arXiv:2606.01397 —
+GitHub's slug redirect is verified working and must stay that way; nobody may ever
+register a repository at that old slug again.
+
 This repository contains a simulation-only fixed-wing UAV command-supervision system. It combines:
 
 - a 12-state rigid-body UAV simulator,

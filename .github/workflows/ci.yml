@@ -1,0 +1,36 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: install backend
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e './backend[dev,experiments]'
+
+      - name: lint
+        run: make lint
+
+      - name: type (backend)
+        run: |
+          cd backend
+          pyright src tests
+
+      - name: test
+        run: make test
+
+      - name: check-paths
+        run: make check-paths

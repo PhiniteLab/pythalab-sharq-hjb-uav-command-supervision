@@ -57,3 +57,15 @@ review-upload-bundles/
 # - experiments/results/data/**
 # - experiments/results/tables/*.csv
 # - experiments/results/figures/*.png
+
+# --- collection shared block (common repository standard, section G) ---
+# Rules already covered above (.venv/, .env*, node_modules/) are not repeated here.
+
+# Owner literature corpus — never committed
+ownerDocs/myLiterature/pdfs/
+
+runs/
+**/literature/pdfs/
+**/*.safetensors
+**/*.pt
+.hypothesis/
